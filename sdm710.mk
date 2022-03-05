@@ -195,7 +195,7 @@ PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sdm710
 
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 endif
 
 # FM
@@ -256,11 +256,6 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_sdm710
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm \
-    vendor.lineage.livedisplay@2.1-service.xiaomi_sdm710
 
 # Media
 PRODUCT_PACKAGES += \
